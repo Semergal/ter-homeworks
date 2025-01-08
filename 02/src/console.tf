@@ -12,13 +12,13 @@ locals {
     develop = {
       cpu   = 2
       ram   = 4
-      image = "ubuntu-21-10"
+      image = "ubuntu-2204-lts"
       disks = ["vda", "vdb"]
     },
     stage = {
       cpu   = 4
       ram   = 8
-      image = "ubuntu-20-04"
+      image = "ubuntu-2004-lts"
       disks = ["vda", "vdb"]
     },
     production = {
@@ -29,4 +29,3 @@ locals {
     }
   }
 }
-

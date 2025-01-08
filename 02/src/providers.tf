@@ -8,9 +8,9 @@ terraform {
 }
 
 provider "yandex" {
-  # token     = var.token
-  cloud_id                 = var.cloud_id
-  folder_id                = var.folder_id
-  zone                     = var.default_zone
-  service_account_key_file = file("~/.authorized_key.json")
+  token                    = var.token
+  cloud_id                 = var.cloud.develop.cloud_id
+  folder_id                = var.cloud.develop.folder_id
+  zone                     = var.cloud.develop.default_zone
+ # service_account_key_file = file("~/.authorized_key.json")
 }
